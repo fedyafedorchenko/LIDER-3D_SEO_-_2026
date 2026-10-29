@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="light" name="color-scheme"/>
+<meta content="Отчёт LIDER-3D по органическому поиску, SEO-позициям и конкурентам за октябрь 2026 года." name="description"/>
+<title>LIDER-3D — SEO и органический трафик | Октябрь 2026</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<style>
+    :root{--indigo:#1e1b4b;--indigo-2:#312e81;--teal:#0d9488;--green:#059669;--mint:#ecfdf5;--light:#f5f7fb;--white:#fff;--text:#17203a;--muted:#64748b;--line:#e2e8f0;--amber:#b45309;--rose:#be123c;--shadow:0 14px 35px rgba(30,27,75,.055)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--light);color:var(--text);font-family:Inter,Roboto,Arial,sans-serif;font-size:14px;line-height:1.55}
+    a{color:var(--indigo-2);text-decoration:none}a:hover{text-decoration:underline}
+    .shell{max-width:1440px;margin:auto;padding:0 30px 68px}
+    .top{background:linear-gradient(123deg,#1e1b4b,#312e81 72%,#134e4a);color:white;padding:30px 0 38px}
+    .top-inner{max-width:1440px;margin:auto;padding:0 30px}
+    .brandline{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:34px}
+    .logo{font-size:20px;font-weight:850;letter-spacing:.03em}.logo span{color:#5eead4}
+    .top-meta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.pill{display:inline-flex;gap:6px;align-items:center;border:1px solid #ffffff3b;border-radius:999px;padding:6px 12px;color:#eeeefe;font-size:12px}
+    .eyebrow{font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:#a5f3fc}
+    h1{font-size:clamp(26px,3vw,42px);line-height:1.16;letter-spacing:-.035em;margin:12px 0 12px;max-width:850px}
+    .lead{font-size:15px;color:#dce4ff;max-width:820px;margin:0}
+    .navigation{display:flex;gap:8px;overflow-x:auto;padding:18px 0 5px;scrollbar-width:thin}
+    .navigation a{white-space:nowrap;color:#42466b;background:#e9eaf6;border-radius:9px;padding:9px 13px;font-size:12px;font-weight:750}
+    .navigation a:hover{background:#d9f8f1;text-decoration:none;color:#0f766e}
+    section{margin-top:30px;scroll-margin-top:15px}
+    .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:16px}
+    .section-head h2{font-size:22px;letter-spacing:-.025em;margin:0;color:var(--indigo)}.section-head p{margin:3px 0 0;color:var(--muted);font-size:12px}
+    .grid{display:grid;gap:16px}.kpis{grid-template-columns:repeat(5,minmax(0,1fr))}.two{grid-template-columns:1.35fr 1fr}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .card{background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:21px;min-width:0}
+    .kpi{padding:19px}.kpi-label{font-size:12px;color:var(--muted);font-weight:700;min-height:34px}
+    .kpi-value{font-size:clamp(23px,2.6vw,34px);font-weight:850;color:var(--indigo);letter-spacing:-.04em;line-height:1.2;margin:10px 0}
+    .kpi-value.empty{color:#94a3b8}.comparison{border-top:1px solid var(--line);padding-top:11px;color:#76839b;font-size:11px;margin-top:14px}
+    .tag{display:inline-flex;align-items:center;padding:3px 8px;border-radius:7px;background:#eef2ff;color:#3730a3;font-size:11px;font-weight:800}
+    .tag.green{background:#e6f8f0;color:#047857}.tag.amber{background:#fff6dc;color:#92400e}.tag.red{background:#fff1f2;color:#be123c}.tag.gray{background:#f1f5f9;color:#64748b}
+    .submetrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:15px}
+    .submetric{padding:15px 18px;background:#f0f3fb;border:1px solid #e3e7f4;border-radius:12px}.submetric span{display:block;color:var(--muted);font-size:11px}.submetric strong{display:block;font-size:23px;color:var(--indigo);margin-top:3px;letter-spacing:-.025em}
+    .notice{background:#eef7ff;border:1px solid #cdddf3;border-left:4px solid #4f46e5;border-radius:12px;padding:13px 16px;color:#4f577a;font-size:12px;margin-top:15px}
+    .chart-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:13px}.chart-header h3,.card h3{font-size:16px;line-height:1.35;letter-spacing:-.015em;color:var(--indigo);margin:0}.caption{font-size:12px;color:var(--muted);margin:7px 0 0}
+    .chart-box{height:270px;position:relative}.chart-box.short{height:250px}.chart-box canvas{width:100%!important;height:100%!important}
+    .no-data{position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);max-width:310px;background:#fffffff0;border:1px dashed #cbd5e1;border-radius:13px;padding:15px 19px;text-align:center;box-shadow:0 9px 30px #1e1b4b0a;pointer-events:none}
+    .no-data strong{display:block;color:var(--indigo);font-size:13px}.no-data span{display:block;font-size:11px;color:var(--muted);margin-top:6px}
+    .statline{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:7px 0;font-size:12px}.statline strong{font-size:14px;color:var(--indigo)}.dot{height:9px;width:9px;display:inline-block;border-radius:50%;margin-right:7px}.dot.yandex{background:#0d9488}.dot.google{background:#4f46e5}
+    .chart-legend{border-top:1px solid var(--line);padding-top:12px;margin-top:5px}
+    .mini{font-size:11px;color:var(--muted);margin:12px 0 0}
+    .table-wrap{width:100%;overflow-x:auto}.table{width:100%;border-collapse:collapse;min-width:665px;font-size:12px}.table th{text-align:left;font-weight:750;color:#64748b;background:#f8fafc;padding:12px 11px;white-space:nowrap}.table td{padding:12px 11px;border-top:1px solid #edf1f6;vertical-align:middle}.table tbody tr:hover{background:#fcfdff}.table .numeric{text-align:right;font-variant-numeric:tabular-nums}.table td strong{color:var(--indigo)}
+    .progress-track{height:13px;background:#e8eaf5;border-radius:100px;overflow:hidden;display:flex;margin:18px 0 13px}.progress-track span{height:100%;display:block}.progress-labels{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:#5d6782}.progress-labels strong{color:var(--indigo)}
+    .trend{display:inline-block;font-weight:800;font-size:11px}.trend.pos{color:var(--green)}.trend.neg{color:var(--rose)}.trend.na{color:#94a3b8}
+    .search{width:250px;max-width:100%;padding:10px 12px;border-radius:9px;border:1px solid #cbd5e1;font:inherit;color:var(--text);background:#fff;outline-color:var(--teal)}
+    .status-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.status-item{border:1px solid var(--line);border-radius:11px;padding:16px;background:#fdfefe}.status-item b{display:block;font-size:12px;color:var(--indigo);margin-bottom:8px}.status-item p{font-size:11px;color:var(--muted);margin:7px 0 0}
+    .landing{display:flex;flex-direction:column;gap:12px}.landing-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.landing-name{font-size:16px;font-weight:850;color:var(--indigo)}
+    .landing-link{font-size:11px;overflow-wrap:anywhere;line-height:1.5}.landing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;border-top:1px solid var(--line);padding-top:13px}
+    .landing-grid span{display:block;color:var(--muted);font-size:11px}.landing-grid strong{display:block;font-size:19px;color:var(--indigo)}
+    .action-list{list-style:none;padding:0;margin:13px 0 0}.action-list li{padding:13px 0;border-top:1px solid #edf1f6;display:flex;gap:11px}.num{display:inline-flex;align-items:center;justify-content:center;background:#e0f2fe;color:#075985;height:27px;min-width:27px;border-radius:8px;font-size:11px;font-weight:800}
+    .action-list strong{display:block;color:var(--indigo);margin-bottom:3px;font-size:13px}.action-list span{display:block;color:#56627b;font-size:12px}
+    .insights{display:grid;grid-template-columns:1fr 1fr;gap:16px}.insights .card{border-top:3px solid var(--teal)}.insights .card:nth-child(2){border-top-color:#6366f1}
+    .toggle{display:flex;gap:4px;padding:3px;border:1px solid var(--line);background:#f8fafc;border-radius:10px}.toggle button{cursor:pointer;border:0;border-radius:7px;background:transparent;padding:6px 11px;font-size:11px;font-weight:800;color:var(--muted)}.toggle button.active{background:var(--indigo);color:white}
+    footer{color:#64748b;font-size:11px;margin-top:34px;padding-top:18px;border-top:1px solid var(--line)}footer p{margin:6px 0}
+    @media(max-width:1150px){.kpis{grid-template-columns:repeat(3,1fr)}.four{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:780px){.shell,.top-inner{padding-left:16px;padding-right:16px}.two,.three,.insights{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}.submetrics{grid-template-columns:repeat(2,1fr)}.status-list{grid-template-columns:1fr}h1{font-size:30px}}
+    @media(max-width:480px){.kpis{grid-template-columns:1fr}.card{padding:16px}.submetrics{grid-template-columns:1fr 1fr}.submetric{padding:12px}.submetric strong{font-size:18px}.chart-box{height:250px}.brandline{margin-bottom:22px}}
+    @media print{body{background:#fff}.top{-webkit-print-color-adjust:exact;print-color-adjust:exact}.card{break-inside:avoid;box-shadow:none}.navigation,.search,.toggle{display:none}.shell{max-width:100%;padding:0 10mm}.chart-box{height:220px}section{break-inside:avoid}}
+  
+    .site-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .new-returning{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .pages-table{min-width:475px}
+    .page-url{font-size:10px;color:#94a3b8;margin-top:3px;overflow-wrap:anywhere}
+    .kpi-value small{white-space:nowrap}
+    .site-kpis .kpi-value{font-size:clamp(21px,2.5vw,33px)}
+    @media(max-width:850px){.site-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:500px){.site-kpis{grid-template-columns:1fr}.new-returning{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top">
+<div class="top-inner">
+<div class="brandline">
+<div class="logo">LIDER<span>–3D</span> <span style="font-size:12px;font-weight:500;color:#dce4ff">/ АНАЛИТИКА</span></div>
+<div class="top-meta"><span class="pill">Октябрь 2026</span><span class="pill">По состоянию на 29 октября</span><span class="pill">SEO · Поисковый трафик</span></div>
+</div>
+<div class="eyebrow">Ежемесячный отчёт · маркетинг</div>
+<h1>Органический трафик и SEO: итоги октября</h1>
+<p class="lead">Результаты поисковых источников, позиции в выдаче, сравнение с конкурентами и приоритеты продвижения LIDER-3D на ноябрь.</p>
+</div>
+</header>
+<main class="shell">
+<nav aria-label="Разделы отчёта" class="navigation"><a href="#summary">Ключевые показатели</a><a href="#traffic">Источники трафика</a><a href="#audience">Аудитория и поведение</a><a href="#keywords">Позиции и семантика</a><a href="#landings">Страницы сайта</a><a href="#strategy">План действий</a></nav>
+<section id="summary">
+<div class="section-head"><div><h2>01. Ключевые показатели поиска</h2><p>Сквозная аналитика Calltouch и Яндекс Метрика · разные источники измерений</p></div><span class="tag green">Октябрь 2026</span></div>
+<div class="grid kpis">
+<article class="card kpi"><div class="kpi-label">Переходы из поиска · Яндекс Метрика</div><div class="kpi-value">65,8 тыс.</div><span class="tag green">≈49,5% визитов сайта</span><div class="comparison">Суммарные данные поискового канала</div></article>
+<article class="card kpi"><div class="kpi-label">Переходы · Calltouch</div><div class="kpi-value">56 194</div><span class="tag">5 поисковых источников</span><div class="comparison">Переходы по данным сквозной аналитики</div></article>
+<article class="card kpi"><div class="kpi-label">Лиды · Calltouch</div><div class="kpi-value">1 000</div><span class="tag green">Конверсия 1,78%</span><div class="comparison">Из представленных поисковых источников</div></article>
+<article class="card kpi"><div class="kpi-label">Сделки · Calltouch</div><div class="kpi-value">331</div><span class="tag">33,1% от числа лидов</span><div class="comparison">Зафиксировано в сквозной аналитике</div></article>
+<article class="card kpi"><div class="kpi-label">Атрибутированная выручка · Calltouch</div><div class="kpi-value">117,37 <small style="font-size:.47em">млн ₽</small></div><span class="tag green">Поисковые источники</span><div class="comparison">Сумма по пяти поисковым источникам</div></article>
+</div>
+<div class="submetrics">
+<div class="submetric"><span>Лиды Google</span><strong>536</strong></div>
+<div class="submetric"><span>Лиды Яндекс</span><strong>455</strong></div>
+<div class="submetric"><span>Конверсия Google / Яндекс</span><strong>2,03% / 1,56%</strong></div>
+<div class="submetric"><span>Запросов в ТОП-10 (из 200)</span><strong>187</strong></div>
+</div>
+<div class="notice"><strong>Источники отчёта:</strong> Яндекс Метрика фиксирует около 65,8 тыс. визитов по каналу «Переходы из поисковых систем»; Calltouch показывает 56 194 перехода по пяти источникам. Показатели приведены отдельно, поскольку это разные системы измерения.</div>
+</section>
+<section id="traffic">
+<div class="section-head"><div><h2>02. Структура поискового трафика</h2><p>Интерактивные диаграммы по Яндекс Метрике и Calltouch</p></div></div>
+<div class="grid two">
+<article class="card"><div class="chart-header"><div><h3>Каналы привлечения · Яндекс Метрика</h3><p class="caption">Визиты всего сайта, по каналам · данные округлены в интерфейсе</p></div><span class="tag green">Поиск — крупнейший канал</span></div><div class="chart-box"><canvas aria-label="Структура источников трафика сайта" id="trafficChart"></canvas></div><p class="mini">Поиск — 65,8 тыс.; реклама — 36,4 тыс.; прямые заходы — 21,6 тыс.; переходы по ссылкам — 4 338; внутренние переходы — 3 097. Источники в интерфейсе показаны в округлении.</p></article>
+<article class="card">
+<div class="chart-header"><div><h3>Яндекс и Google: распределение визитов</h3><p class="caption">Доли рассчитаны только внутри этих двух систем</p></div></div>
+<div class="chart-box short"><canvas aria-label="Доли Яндекса и Google" id="sourceChart" role="img"></canvas></div>
+<div class="chart-legend"><div class="statline"><span><i class="dot yandex"></i>Яндекс · 52,4%</span><strong>29 115</strong></div><div class="statline"><span><i class="dot google"></i>Google · 47,6%</span><strong>26 408</strong></div><p class="mini">Дополнительно: 671 переход из Bing, DuckDuckGo и Яндекс Smart Camera не включён в диаграмму двух систем.</p></div>
+</article>
+</div>
+<div class="grid two" style="margin-top:16px">
+<article class="card">
+<div class="chart-header"><div><h3>Источники: переходы и лиды</h3><p class="caption">Переключение показателей без изменения исходных данных</p></div><div aria-label="Показатель диаграммы" class="toggle" role="group"><button class="active" data-metric="visits" type="button">Визиты</button><button data-metric="leads" type="button">Лиды</button></div></div>
+<div class="chart-box"><canvas id="enginesChart"></canvas></div>
+</article>
+<article class="card">
+<div class="chart-header"><div><h3>Результативность поисковых систем</h3><p class="caption">Конверсия перехода в лид и зарегистрированные сделки</p></div></div>
+<div class="table-wrap"><table class="table"><thead><tr><th>Источник</th><th class="numeric">Конверсия</th><th class="numeric">Лиды</th><th class="numeric">Сделки</th></tr></thead><tbody>
+<tr><td><strong>Яндекс</strong></td><td class="numeric">1,56%</td><td class="numeric">455</td><td class="numeric">133</td></tr>
+<tr><td><strong>Google</strong></td><td class="numeric">2,03%</td><td class="numeric">536</td><td class="numeric">195</td></tr>
+<tr><td>Bing</td><td class="numeric">1,73%</td><td class="numeric">6</td><td class="numeric">3</td></tr>
+<tr><td>DuckDuckGo</td><td class="numeric">1,02%</td><td class="numeric">2</td><td class="numeric">0</td></tr>
+<tr><td>Яндекс Smart Camera</td><td class="numeric">0,78%</td><td class="numeric">1</td><td class="numeric">0</td></tr>
+</tbody></table></div>
+<div class="notice" style="margin-top:16px"><strong>Наблюдение:</strong> Google приносит 47,0% всех переходов, но 53,6% лидов и 58,9% сделок. Его конверсия в лид выше Яндекса на 0,47 п. п. Сравнивать качество трафика следует с учётом состава запросов и посадочных страниц.</div>
+</article>
+</div>
+</section><section id="audience">
+<div class="section-head"><div><h2>03. Аудитория и поведение пользователей</h2><p>Яндекс Метрика · все источники трафика, не только поиск · изменения относительно предыдущего периода в интерфейсе</p></div><span class="tag">Данные всего сайта</span></div>
+<div class="grid site-kpis">
+<article class="card kpi"><div class="kpi-label">Просмотры страниц</div><div class="kpi-value">280,5 тыс.</div><span class="tag green">▲ 4,89%</span><div class="comparison">К предыдущему периоду</div></article>
+<article class="card kpi"><div class="kpi-label">Визиты</div><div class="kpi-value">132,9 тыс.</div><span class="tag red">▼ 9,64%</span><div class="comparison">К предыдущему периоду</div></article>
+<article class="card kpi"><div class="kpi-label">Посетители</div><div class="kpi-value">88,7 тыс.</div><span class="tag red">▼ 20,25%</span><div class="comparison">К предыдущему периоду</div></article>
+<article class="card kpi"><div class="kpi-label">Среднее время на сайте</div><div class="kpi-value">2 мин 14 с</div><span class="tag green">▲ 37,01%</span><div class="comparison">К предыдущему периоду</div></article>
+<article class="card kpi"><div class="kpi-label">Глубина просмотра</div><div class="kpi-value">2,11</div><span class="tag green">▲ 16,08%</span><div class="comparison">К предыдущему периоду</div></article>
+<article class="card kpi"><div class="kpi-label">Отказы</div><div class="kpi-value">24,00%</div><span class="tag green">▼ 16,54%</span><div class="comparison">Снижение доли отказов</div></article>
+</div>
+<div class="grid two" style="margin-top:16px">
+<article class="card"><div class="chart-header"><div><h3>Устройства посетителей</h3><p class="caption">Визиты всего сайта; данные округлены</p></div></div><div class="chart-box"><canvas aria-label="Распределение визитов по устройствам" id="devicesChart"></canvas></div><div class="chart-legend"><div class="statline"><span>Компьютеры</span><strong>70,6 тыс.</strong></div><div class="statline"><span>Смартфоны</span><strong>61,5 тыс.</strong></div><div class="statline"><span>Планшеты / ТВ</span><strong>857 / 7</strong></div></div></article>
+<article class="card"><div class="chart-header"><div><h3>Возрастные группы</h3><p class="caption">Визиты с определённой возрастной категорией</p></div></div><div class="chart-box"><canvas aria-label="Визиты по возрастным группам" id="ageChart"></canvas></div><p class="mini">35–44 года: 31,0 тыс.; 25–34: 30,1 тыс.; 45–54: 15,0 тыс.; 18–24: 9 577; 55+: 5 068. Группы не охватывают все визиты сайта.</p></article>
+</div>
+<div class="grid two" style="margin-top:16px">
+<article class="card">
+<h3>Новые и вернувшиеся пользователи</h3>
+<p class="caption">Показатели сегментов из виджета Метрики</p>
+<div class="grid new-returning" style="margin-top:19px">
+<div class="submetric"><span>Новые посетители</span><strong>85,0 тыс.</strong></div>
+<div class="submetric"><span>Вернувшиеся посетители</span><strong>19,9 тыс.</strong></div>
+</div>
+<p class="mini">Сегментные значения не требуется суммировать с числом уникальных посетителей 88,7 тыс.</p>
+</article>
+<article class="card">
+<h3>Что изменилось в поведении</h3>
+<ul class="action-list">
+<li><span class="num">01</span><div><strong>Визитов и пользователей стало меньше</strong><span>Визиты −9,64%, посетители −20,25%.</span></div></li>
+<li><span class="num">02</span><div><strong>Вовлечённость выросла</strong><span>Время на сайте +37,01%, глубина просмотра +16,08%; отказы снизились на 16,54%.</span></div></li>
+</ul>
+</article>
+</div>
+</section>
+<section id="keywords">
+<div class="section-head"><div><h2>04. SEO-позиции и ключевые запросы</h2><p>200 запросов по LIDER-3D · частотности из Яндекс Вордстата</p></div></div>
+<div class="grid two">
+<article class="card"><h3>Структура позиций в SEO-выгрузке</h3><div aria-label="112 в топ-3, 75 на местах 4–10, 13 ниже 10" class="progress-track"><span style="width:56%;background:#0d9488"></span><span style="width:37.5%;background:#6366f1"></span><span style="width:6.5%;background:#cbd5e1"></span></div><div class="progress-labels"><span><i class="dot" style="background:#0d9488"></i><strong>112</strong> · ТОП-3</span><span><i class="dot" style="background:#6366f1"></i><strong>75</strong> · места 4–10</span><span><i class="dot" style="background:#cbd5e1"></i><strong>13</strong> · вне ТОП-10</span></div><p class="mini">93,5% запросов выборки находятся в ТОП-10. Это не доля всех запросов сайта в поисковой выдаче.</p></article>
+<article class="card"><h3>Изменение позиций запросов</h3><div class="submetrics" style="grid-template-columns:repeat(4,minmax(0,1fr));margin-top:18px;gap:8px"><div><span class="tag green">Рост</span><div class="kpi-value" style="font-size:25px">64</div></div><div><span class="tag red">Падение</span><div class="kpi-value" style="font-size:25px">21</div></div><div><span class="tag">New</span><div class="kpi-value" style="font-size:25px">29</div></div><div><span class="tag gray">Без отметки</span><div class="kpi-value" style="font-size:25px">86</div></div></div><p class="mini">«New» — отметка в SEO-выгрузке, не доказательство первой индексации страницы в октябре.</p></article>
+</div>
+<article class="card" style="margin-top:16px">
+<div class="chart-header"><div><h3>Приоритетные запросы: спрос и видимость</h3><p class="caption">Частотность Вордстата ≠ показы сайта. Клики и показы отдельных запросов в исходных данных отсутствуют.</p></div><input aria-label="Фильтр ключевых запросов" class="search" id="keywordSearch" placeholder="Поиск по запросам…" type="search"/></div>
+<div class="table-wrap"><table class="table" id="keywordsTable"><thead><tr><th>Запрос</th><th class="numeric">Частотность Wordstat</th><th class="numeric">Позиция</th><th class="numeric">Изменение</th><th class="numeric">Клики / показы сайта</th></tr></thead><tbody>
+<tr><td><strong>Bambu Lab</strong></td><td class="numeric">192 694</td><td class="numeric">10</td><td class="numeric"><span class="trend neg">−5</span></td><td class="numeric">н/д</td></tr>
+<tr><td><strong>Creality</strong></td><td class="numeric">153 969</td><td class="numeric">6</td><td class="numeric"><span class="trend neg">−2</span></td><td class="numeric">н/д</td></tr>
+<tr><td><strong>Flashforge</strong></td><td class="numeric">50 555</td><td class="numeric">2</td><td class="numeric"><span class="trend pos">+2</span></td><td class="numeric">н/д</td></tr>
+<tr><td><strong>Принтер 3Д купить</strong></td><td class="numeric">34 913</td><td class="numeric">н/д*</td><td class="numeric"><span class="trend na">—</span></td><td class="numeric">н/д</td></tr>
+<tr><td><strong>Пластик PLA</strong></td><td class="numeric">23 187</td><td class="numeric">1</td><td class="numeric"><span class="trend pos">+14</span></td><td class="numeric">н/д</td></tr>
+<tr><td><strong>Пластик PETG</strong></td><td class="numeric">20 983</td><td class="numeric">4</td><td class="numeric"><span class="trend pos">New</span></td><td class="numeric">н/д</td></tr>
+<tr><td><strong>Фотополимерный принтер</strong></td><td class="numeric">15 779</td><td class="numeric">3</td><td class="numeric"><span class="trend pos">+4</span></td><td class="numeric">н/д</td></tr>
+<tr><td><strong>Bambu Lab A1 mini</strong></td><td class="numeric">13 226</td><td class="numeric">4</td><td class="numeric"><span class="trend pos">New</span></td><td class="numeric">н/д</td></tr>
+<tr><td><strong>Snapmaker U1</strong></td><td class="numeric">11 426</td><td class="numeric">н/д*</td><td class="numeric"><span class="trend na">—</span></td><td class="numeric">н/д</td></tr>
+<tr><td><strong>Flashforge AD5X</strong></td><td class="numeric">9 109</td><td class="numeric">10</td><td class="numeric"><span class="trend neg">−1</span></td><td class="numeric">н/д</td></tr>
+<tr><td><strong>Elegoo Centauri Carbon 2</strong></td><td class="numeric">4 239</td><td class="numeric">2</td><td class="numeric"><span class="trend pos">New</span></td><td class="numeric">н/д</td></tr>
+<tr><td><strong>Creality K3</strong></td><td class="numeric">4 036</td><td class="numeric">1</td><td class="numeric"><span class="trend na">—</span></td><td class="numeric">н/д</td></tr>
+<tr><td><strong>Bambu Lab H2C</strong></td><td class="numeric">3 124</td><td class="numeric">1</td><td class="numeric"><span class="trend pos">New</span></td><td class="numeric">н/д</td></tr>
+</tbody></table></div>
+<p class="mini">* Запрос не найден в ТОП-200 предоставленной SEO-выгрузки LIDER-3D; это не означает отсутствия сайта в поиске. Данные по кликам, показам и средней позиции в Яндекс Вебмастере / Google Search Console не предоставлены. Частотности не следует суммировать из-за пересечения запросов.</p>
+</article>
+<article class="card" style="margin-top:16px"><h3>Конкуренты: показательные различия по позициям</h3><div class="table-wrap"><table class="table"><thead><tr><th>Запрос</th><th class="numeric">LIDER-3D</th><th>Конкурент</th><th class="numeric">Позиция конкурента</th></tr></thead><tbody>
+<tr><td>Bambu Lab</td><td class="numeric">10</td><td>3D-Outlet</td><td class="numeric">3</td></tr><tr><td>Flashforge AD5X</td><td class="numeric">10</td><td>3D-DIY</td><td class="numeric">1</td></tr><tr><td>Snapmaker U1</td><td class="numeric">н/д*</td><td>Цветной Мир</td><td class="numeric">1</td></tr><tr><td>Фотополимерный принтер</td><td class="numeric">3</td><td>3DTool</td><td class="numeric">1</td></tr><tr><td>Пластик PLA</td><td class="numeric">1</td><td>Цветной Мир</td><td class="numeric">11</td></tr><tr><td>Пластик PETG</td><td class="numeric">4</td><td>3DVision</td><td class="numeric">8</td></tr>
+</tbody></table></div><p class="mini">В сравнении также проанализирован igo3d.ru. Позиции относятся к предоставленному SEO-срезу, а не ко всем регионам и устройствам.</p></article>
+</section>
+
+<section id="landings">
+<div class="section-head"><div><h2>05. Страницы сайта и поисковая видимость</h2><p>SEO-страницы с сильными позициями и фактические просмотры URL по всем каналам</p></div></div>
+<div class="grid three">
+<article class="card landing"><div class="landing-top"><span class="tag green">Позиция 1</span><span class="tag gray">Доля запроса 2,74%</span></div><div><div class="landing-name">Creality K3</div><p class="caption">Карточка 3D-принтера · запрос «creality k3»</p></div><a class="landing-link" href="https://lider-3d.ru/catalog/3d_printery/3d_printer_creality_k3/" rel="noopener noreferrer" target="_blank">Открыть страницу товара ↗</a></article>
+<article class="card landing"><div class="landing-top"><span class="tag green">Позиция 1</span><span class="tag gray">Доля запроса 2,45%</span></div><div><div class="landing-name">PA66-GF30</div><p class="caption">Карточка пластика · запрос «pa66-gf30»</p></div><a class="landing-link" href="https://lider-3d.ru/catalog/materialy/plastik_dlya_3d_printerov/pa66_gf_30_plastik_filamentarno_dlya_3d_printera/" rel="noopener noreferrer" target="_blank">Открыть страницу товара ↗</a></article>
+<article class="card landing"><div class="landing-top"><span class="tag green">Позиция 2</span><span class="tag gray">Доля запроса 2,36%</span></div><div><div class="landing-name">Anycubic</div><p class="caption">Страница бренда · запрос «anycubic»</p></div><a class="landing-link" href="https://lider-3d.ru/brands/anycubic/" rel="noopener noreferrer" target="_blank">Открыть страницу бренда ↗</a></article>
+</div>
+<div class="notice"><strong>Важно:</strong> карточки выше показывают SEO-позиции по запросам, а приведённые далее просмотры URL — весь трафик сайта по Яндекс Метрике (не только органический). «Просмотры» не равны «визитам на страницу входа».</div>
+<div class="grid two" style="margin-top:16px">
+<article class="card">
+<div class="chart-header"><div><h3>ТОП-10 URL по просмотрам</h3><p class="caption">Яндекс Метрика · все источники · просмотры, не посещения</p></div></div>
+<div class="table-wrap"><table class="table pages-table"><thead><tr><th>Страница / URL</th><th class="numeric">Просмотры</th></tr></thead><tbody>
+<tr><td><strong>Каталог 3D-принтеров</strong><div class="page-url">/catalog/3d_printery/</div></td><td class="numeric">12,8 тыс.</td></tr>
+<tr><td><strong>Главная страница</strong><div class="page-url">/</div></td><td class="numeric">10,6 тыс.</td></tr>
+<tr><td><strong>Корзина</strong><div class="page-url">/basket/</div></td><td class="numeric">4 638</td></tr>
+<tr><td><strong>Пластик для 3D-принтеров</strong><div class="page-url">/catalog/materialy/plastik_dlya_3d_printerov/</div></td><td class="numeric">4 312</td></tr>
+<tr><td><strong>FlashForge CJ270</strong><div class="page-url">/catalog/3d_printery/3d_printer_flashforge_cj270/</div></td><td class="numeric">4 018</td></tr>
+<tr><td><strong>Каталог</strong><div class="page-url">/catalog/</div></td><td class="numeric">3 550</td></tr>
+<tr><td><strong>Контакты</strong><div class="page-url">/contacts/</div></td><td class="numeric">2 484</td></tr>
+<tr><td><strong>Категории 3D-принтеров</strong><div class="page-url">/catalog/3d_printery/kategoriya/</div></td><td class="numeric">2 272</td></tr>
+<tr><td><strong>Bambu Lab P2S</strong><div class="page-url">/catalog/3d_printery/3d_printer_bambu_lab_p2s/</div></td><td class="numeric">2 051</td></tr>
+<tr><td><strong>Bambu Lab A1</strong><div class="page-url">/catalog/3d_printery/3d_printer_bambu_lab_a1/</div></td><td class="numeric">1 950</td></tr>
+</tbody></table></div>
+</article>
+<article class="card">
+<div class="chart-header"><div><h3>ТОП заголовков страниц</h3><p class="caption">По просмотрам · Яндекс Метрика · все источники</p></div></div>
+<div class="table-wrap"><table class="table pages-table"><thead><tr><th>Заголовок страницы</th><th class="numeric">Просмотры</th></tr></thead><tbody>
+<tr><td>3D-принтеры — купить недорого</td><td class="numeric">23,4 тыс.</td></tr>
+<tr><td>Найдено</td><td class="numeric">13,0 тыс.</td></tr>
+<tr><td>LIDER-3D: 3D-принтеры, сканеры и материалы</td><td class="numeric">11,2 тыс.</td></tr>
+<tr><td>Пластик для 3D-принтера — купить</td><td class="numeric">7 651</td></tr>
+<tr><td>Корзина</td><td class="numeric">4 970</td></tr>
+<tr><td>3D-принтер FlashForge CJ270</td><td class="numeric">4 039</td></tr>
+<tr><td>Каталог</td><td class="numeric">3 612</td></tr>
+<tr><td>Подбор оборудования LIDER-3D — квиз</td><td class="numeric">2 910</td></tr>
+<tr><td>3D-принтер Bambu Lab A1</td><td class="numeric">2 522</td></tr>
+<tr><td>3D-принтер Snapmaker U1</td><td class="numeric">2 522</td></tr>
+</tbody></table></div>
+<p class="mini">Длинные заголовки сокращены для удобства отображения. В отчёте представлены числовые значения из виджета Метрики.</p>
+</article>
+</div><article class="card" style="margin-top:16px">
+<div class="chart-header"><div><h3>Самые просматриваемые URL</h3><p class="caption">Просмотры среди страниц из ТОП-10 · не только поиск</p></div></div>
+<div class="chart-box" style="height:300px"><canvas aria-label="Самые популярные страницы сайта" id="pagesChart"></canvas></div>
+</article></section>
+<section id="strategy">
+<div class="section-head"><div><h2>06. Выводы и стратегия на ноябрь</h2><p>Приоритеты основаны на позициях, частотностях и конверсии поисковых источников</p></div></div>
+<div class="insights">
+<article class="card"><h3>Что показали данные</h3><ul class="action-list">
+<li><span class="num">01</span><div><strong>Сильная видимость по материалам</strong><span>«Пластик PLA» — позиция 1 (+14), «Пластик PETG» — позиция 4. Это основа для увеличения органических продаж расходников.</span></div></li>
+<li><span class="num">02</span><div><strong>Потенциал в популярных брендах</strong><span>Bambu Lab — позиция 10 (−5) при частотности 192 694; Creality — позиция 6 (−2) при частотности 153 969.</span></div></li>
+<li><span class="num">03</span><div><strong>Конкурентные пробелы по моделям</strong><span>Flashforge AD5X — позиция 10 против позиции 1 у 3D-DIY; Snapmaker U1 не найден в ТОП-200 выборки, тогда как Цветной Мир — на позиции 1.</span></div></li>
+<li><span class="num">04</span><div><strong>Разница в эффективности поиска</strong><span>Google: конверсия в лид 2,03% против 1,56% у Яндекса. Нужно сравнить запросы, мобильные доли и посадочные страницы.</span></div></li>
+</ul></article>
+<article class="card"><h3>Приоритетные действия · ноябрь 2026</h3><ul class="action-list">
+<li><span class="num">01</span><div><strong>Усилить коммерческие кластеры</strong><span>Bambu Lab, Creality, Snapmaker U1, Flashforge AD5X, Bambu Lab P2S и «3D-принтер купить»: обновить соответствующие страницы, метатеги и перелинковку.</span></div></li>
+<li><span class="num">02</span><div><strong>Развивать семантику пластиков</strong><span>Сохранить позицию PLA; усилить PETG до ТОП-3; проверить спрос и текущие позиции для ABS и композитов перед расширением контента.</span></div></li>
+
+
+
+</ul></article>
+</div>
+<div class="grid four" style="margin-top:16px">
+<div class="card"><span class="tag green">Сохранить</span><h3 style="margin-top:12px">PLA · ТОП-1</h3><p class="caption">Контроль устойчивости позиции и коммерческой конверсии.</p></div>
+<div class="card"><span class="tag">Усилить</span><h3 style="margin-top:12px">PETG · № 4</h3><p class="caption">Приоритетный кандидат для выхода в первую тройку.</p></div>
+<div class="card"><span class="tag amber">Вернуть позиции</span><h3 style="margin-top:12px">Bambu Lab · № 10</h3><p class="caption">Восстановить видимость высокочастотного брендового кластера.</p></div>
+<div class="card"><span class="tag amber">Сократить разрыв</span><h3 style="margin-top:12px">Flashforge AD5X</h3><p class="caption">Работа с товарной страницей на фоне преимущества конкурента.</p></div>
+</div>
+</section>
+<footer>
+<p><strong>Источники:</strong> Яндекс Метрика (скриншоты с показателями трафика, аудитории и просмотров страниц); сквозная аналитика Calltouch; «анализ seo на октябрь конкуренты.xlsx» (7 сайтов, по 200 запросов в выборке); «яд вордстат отчет октябрь.xlsx» (1 220 строк, 827 уникальных формулировок после устранения точных дублей).</p>
+<p><strong>Примечание:</strong> в Метрике аудитория и вовлечённость приведены по сайту в целом, а не по органическому поиску отдельно. Данные Метрики отображены в округлённом виде, как на скриншотах. Значения по дням, показатели с разбивкой по органическим посадочным страницам и сравнение именно поискового канала с предыдущим месяцем не предоставлены. Для 16 формулировок Wordstat в повторах есть расхождения частотности.</p>
+<p>© LIDER-3D · SEO и поисковая аналитика · Октябрь 2026</p>
+</footer>
+</main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const fmt = n => Number(n).toLocaleString('ru-RU');
+      const filter = document.getElementById('keywordSearch');
+      filter.addEventListener('input', function () {
+        const query = this.value.trim().toLocaleLowerCase('ru-RU');
+        document.querySelectorAll('#keywordsTable tbody tr').forEach(row => {
+          row.hidden = !row.textContent.toLocaleLowerCase('ru-RU').includes(query);
+          row.style.display = row.hidden ? 'none' : '';
+        });
+      });
+      if (!window.Chart) return;
+      Chart.defaults.font.family = 'Inter, Roboto, Arial, sans-serif';
+      Chart.defaults.color = '#64748b';
+      const grid = { color: '#e8edf5', drawTicks: false };
+      const tooltip = { backgroundColor: '#1e1b4b', titleColor: '#fff', bodyColor: '#fff', padding: 12, displayColors: true };
+      new Chart(document.getElementById('trafficChart'), {
+        type: 'bar',
+        data: {
+          labels: ['Поиск','Реклама','Прямые заходы','Ссылки с сайтов','Внутренние'],
+          datasets: [{
+            label: 'Визиты по всем каналам',
+            data: [65800,36400,21600,4338,3097],
+            backgroundColor: ['#0d9488','#4f46e5','#67e8f9','#a5b4fc','#cbd5e1'],
+            borderRadius: 6,
+            maxBarThickness: 40
+          }]
+        },
+        options: {
+          indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+          plugins: {legend: {display: false},tooltip: {...tooltip,callbacks: {label: ctx => `${ctx.dataset.label}: ${fmt(ctx.parsed.x)}`}}},
+          scales: {x: {beginAtZero: true,grid,ticks: {callback: v => fmt(v)}}, y: {grid: {display: false}}}
+        }
+      });
+      new Chart(document.getElementById('sourceChart'), {
+        type: 'doughnut',
+        data: { labels:['Яндекс','Google'], datasets:[{ data:[29115,26408], backgroundColor:['#0d9488','#4f46e5'], borderWidth:0, hoverOffset:7, borderRadius:5, spacing:3 }] },
+        options: { responsive:true, maintainAspectRatio:false, cutout:'72%', plugins:{legend:{display:false},tooltip:{...tooltip,callbacks:{label:ctx=>`${ctx.label}: ${fmt(ctx.parsed)} (${(ctx.parsed/55523*100).toFixed(1).replace('.',',')}%)`}}} }
+      });
+      const values = { visits:[29115,26408,347,196,128], leads:[455,536,6,2,1] };
+      const engines = new Chart(document.getElementById('enginesChart'), {
+        type:'bar',
+        data:{ labels:['Яндекс','Google','Bing','DuckDuckGo','Smart Camera'],datasets:[{label:'Визиты',data:values.visits,backgroundColor:['#0d9488','#4f46e5','#67e8f9','#a5b4fc','#cbd5e1'],borderRadius:6,maxBarThickness:28}] },
+        options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{...tooltip,callbacks:{label:ctx=>`${ctx.dataset.label}: ${fmt(ctx.parsed.x)}`}}},scales:{x:{beginAtZero:true,grid,ticks:{callback:v=>fmt(v)}},y:{grid:{display:false}}}}
+      });
+      new Chart(document.getElementById('devicesChart'), {
+        type:'doughnut',
+        data:{labels:['Компьютеры','Смартфоны','Планшеты','ТВ'],datasets:[{data:[70600,61500,857,7],backgroundColor:['#4f46e5','#0d9488','#67e8f9','#cbd5e1'],borderWidth:0,hoverOffset:6,spacing:2}]},
+        options:{responsive:true,maintainAspectRatio:false,cutout:'68%',plugins:{legend:{position:'bottom',labels:{boxWidth:10,padding:14}},tooltip:{...tooltip,callbacks:{label:ctx=>`${ctx.label}: ${fmt(ctx.parsed)} визитов`}}}}
+      });
+      new Chart(document.getElementById('ageChart'), {
+        type:'bar',
+        data:{labels:['35–44','25–34','45–54','18–24','55+'],datasets:[{label:'Визиты',data:[31000,30100,15000,9577,5068],backgroundColor:['#4f46e5','#0d9488','#60a5fa','#67e8f9','#a5b4fc'],borderRadius:5,maxBarThickness:34}]},
+        options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{...tooltip,callbacks:{label:ctx=>`${fmt(ctx.parsed.x)} визитов`}}},scales:{x:{beginAtZero:true,grid,ticks:{callback:v=>fmt(v)}},y:{grid:{display:false}}}}
+      });
+      new Chart(document.getElementById('pagesChart'), {
+        type:'bar',
+        data:{labels:['Каталог 3D-принтеров','Главная','Корзина','Пластик для 3D-печати','FlashForge CJ270'],datasets:[{label:'Просмотры страниц',data:[12800,10600,4638,4312,4018],backgroundColor:['#0d9488','#4f46e5','#818cf8','#60a5fa','#67e8f9'],borderRadius:6,maxBarThickness:38}]},
+        options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{...tooltip,callbacks:{label:ctx=>`${ctx.dataset.label}: ${fmt(ctx.parsed.x)}`}}},scales:{x:{beginAtZero:true,grid,ticks:{callback:v=>fmt(v)}},y:{grid:{display:false}}}}
+      });
+      document.querySelectorAll('[data-metric]').forEach(button=>button.addEventListener('click',()=>{
+        document.querySelectorAll('[data-metric]').forEach(b=>b.classList.toggle('active',b===button));
+        const key=button.dataset.metric;
+        engines.data.datasets[0].label=key==='visits'?'Визиты':'Лиды';
+        engines.data.datasets[0].data=values[key];
+        engines.update();
+      }));
+    });
+  </script>
+</body>
+</html>
